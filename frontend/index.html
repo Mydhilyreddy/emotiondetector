@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+    <div class="header-row">
+        <h1>Emotion Detector</h1>
+        <label class="switch">
+            <input type="checkbox" id="toggleMode" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <p class="subtitle">NLP • Local emotion recognition</p>
+
+    <div class="card">
+        <h2>What’s on your mind?</h2>
+
+        <div class="input-row">
+            <input id="textInput" type="text" placeholder="Type something like: I’m excited…" />
+            <button id="voiceBtn" class="mic-btn">🎤</button>
+        </div>
+
+        <button id="detectBtn" class="primary-btn">Detect Emotion</button>
+    </div>
+
+    <div id="resultCard" class="card result-card hidden">
+        <div class="emoji" id="emoji">🙂</div>
+        <div class="emotion-info">
+            <h3 id="emotionLabel">JOY</h3>
+            <p id="confidenceText">Top emotion detected</p>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <h3 class="recent-title">Recent</h3>
+    <div id="recentList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
